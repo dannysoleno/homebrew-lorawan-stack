@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.2.5"
+  version "3.2.6"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.5/lorawan-stack-cli_3.2.5_darwin_amd64.tar.gz"
-    sha256 "c8db128605db9d3dccea82f7df87e873529cbc9bd3a110b7c32cf311464a3841"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.6/lorawan-stack-cli_3.2.6_darwin_amd64.tar.gz"
+    sha256 "4df8b4cfdc091bb3590d9f454fdc60d180117ebfb854bbaeea7b8a467599b97d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.5/lorawan-stack-cli_3.2.5_linux_amd64.tar.gz"
-      sha256 "d3a7a331c40a73620ba243bdc922904f73b0d04d42fca9f1faf0258b65449346"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.6/lorawan-stack-cli_3.2.6_linux_amd64.tar.gz"
+      sha256 "43d5648e4565d3613a407dcae573dc0b87f8331d1dbbdb118d1955c4bc440964"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.5/lorawan-stack-cli_3.2.5_linux_arm64.tar.gz"
-        sha256 "34103b46754496128fce2fd226dd274bddaa476e0f424545d629ee3fd10ef9f0"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.6/lorawan-stack-cli_3.2.6_linux_arm64.tar.gz"
+        sha256 "5d23dff83df791944a561790acd44b85d7324fbc186f22da1390939e98ad4d36"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.5/lorawan-stack-cli_3.2.5_linux_armv6.tar.gz"
-        sha256 "83b7b69478792ac76cde7512bb13c30b9b0c050e9d489bcc18c9be87235b6bc9"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.2.6/lorawan-stack-cli_3.2.6_linux_armv6.tar.gz"
+        sha256 "2ccd90388e990c905b7985c70cba7ca17b21ed48174ed1e286e318c72e0a15bd"
       end
     end
   end
