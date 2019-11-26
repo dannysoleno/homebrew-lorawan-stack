@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.3.0"
+  version "3.3.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.0/lorawan-stack-cli_3.3.0_darwin_amd64.tar.gz"
-    sha256 "502a2c205c19533b9b321d59f5dca7d8d9f99d43705576d42488959d0ea35cea"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.1/lorawan-stack-cli_3.3.1_darwin_amd64.tar.gz"
+    sha256 "3f8f532edb4b5d3bb827dd6510897ef95b98427fb0d26d09f72184890d8494e4"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.0/lorawan-stack-cli_3.3.0_linux_amd64.tar.gz"
-      sha256 "117e682fab8f819d39deedebdfc06c0fac835952df296231d4e0050b3b8123f1"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.1/lorawan-stack-cli_3.3.1_linux_amd64.tar.gz"
+      sha256 "4ee4f4a5393d3368ed36c80b20d300f4399f14103c414aef19f256345313722b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.0/lorawan-stack-cli_3.3.0_linux_arm64.tar.gz"
-        sha256 "0a26455157c0787a7bfad9875c62a93091cb1b1304751f3e04f45b8d177d33c0"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.1/lorawan-stack-cli_3.3.1_linux_arm64.tar.gz"
+        sha256 "fa1782ec89ceb2cdeb658c7143f0d80f8f8123a026b0d2dba80443386769e18e"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.0/lorawan-stack-cli_3.3.0_linux_armv6.tar.gz"
-        sha256 "d2de5bfe763b157d5b771df168bcfb124cbd5ea6d72d96555930243f1df11759"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.3.1/lorawan-stack-cli_3.3.1_linux_armv6.tar.gz"
+        sha256 "78b29361989aa0f7a95c54f78a62fa5f4158bfce8b833e0a1fa57db3ec4cac05"
       end
     end
   end
