@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.4.1"
+  version "3.4.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.1/lorawan-stack-cli_3.4.1_darwin_amd64.tar.gz"
-    sha256 "4f363075627e47ad9aaaa58e613bdc49a8a958b91445d6b7d8457e9e09d099d2"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_darwin_amd64.tar.gz"
+    sha256 "96f75c814f98c921bcb359dc6f4c20846363fb77da1c3e6d8849a7554af56fa6"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.1/lorawan-stack-cli_3.4.1_linux_amd64.tar.gz"
-      sha256 "89fc15b7e78e64e9a8ad09b2bc55070f51518e68470271a463c7b6fa9cc451b2"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_linux_amd64.tar.gz"
+      sha256 "aecde960ada81b0f1b591393810e8c3dcd062ad6a9f041127d8103c7c638f58b"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.1/lorawan-stack-cli_3.4.1_linux_arm64.tar.gz"
-        sha256 "e6997805d03af36bc7105dce4c1f4c61cdb0a09b6aef79830c89f741ebe2072d"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_linux_arm64.tar.gz"
+        sha256 "20ac3bf2fc31ca6fa48b6ad292d99bea360b60ded561e3391342bbfaad2f8e32"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.1/lorawan-stack-cli_3.4.1_linux_armv6.tar.gz"
-        sha256 "128ad23cd502c9ef949ad620cf0102dcb9be9e454618055369cf4463d9b8b6e8"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_linux_armv6.tar.gz"
+        sha256 "59d1e6bf0fd29d0654ecda909c9b007b6f4bc2843361e4087baa37076afef464"
       end
     end
   end
