@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.4.2"
+  version "3.5.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_darwin_amd64.tar.gz"
-    sha256 "96f75c814f98c921bcb359dc6f4c20846363fb77da1c3e6d8849a7554af56fa6"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_darwin_amd64.tar.gz"
+    sha256 "0a6c5ac8218dd02583c17dc4963f8f23ecc617888d393cca641696da58aad69c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_linux_amd64.tar.gz"
-      sha256 "aecde960ada81b0f1b591393810e8c3dcd062ad6a9f041127d8103c7c638f58b"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_linux_amd64.tar.gz"
+      sha256 "a27a5c320ce47f22993fb594faf98dcc84b17ef0ee43862a34882299e095fe59"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_linux_arm64.tar.gz"
-        sha256 "20ac3bf2fc31ca6fa48b6ad292d99bea360b60ded561e3391342bbfaad2f8e32"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_linux_arm64.tar.gz"
+        sha256 "fa5f5b254ef32b7c6387e5bca121fde5e95d8fb78cdc2c688da12d354fede0f3"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.4.2/lorawan-stack-cli_3.4.2_linux_armv6.tar.gz"
-        sha256 "59d1e6bf0fd29d0654ecda909c9b007b6f4bc2843361e4087baa37076afef464"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_linux_armv6.tar.gz"
+        sha256 "8acbc05fb8e77c82147d5cd13b48f7d655ac009900aee57605b71001bd0860b8"
       end
     end
   end
