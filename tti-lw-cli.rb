@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.5.0"
+  version "3.5.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_darwin_amd64.tar.gz"
-    sha256 "0a6c5ac8218dd02583c17dc4963f8f23ecc617888d393cca641696da58aad69c"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.1/lorawan-stack-cli_3.5.1_darwin_amd64.tar.gz"
+    sha256 "1a158da18afc074272b97a5b5412d3ac9207740aa52222c43f5bef88a6775d67"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_linux_amd64.tar.gz"
-      sha256 "a27a5c320ce47f22993fb594faf98dcc84b17ef0ee43862a34882299e095fe59"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.1/lorawan-stack-cli_3.5.1_linux_amd64.tar.gz"
+      sha256 "a112ddbd165a0771fdcabe2a89564d30fd910c29a6f35fb2ecfdb602ef960fd6"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_linux_arm64.tar.gz"
-        sha256 "fa5f5b254ef32b7c6387e5bca121fde5e95d8fb78cdc2c688da12d354fede0f3"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.1/lorawan-stack-cli_3.5.1_linux_arm64.tar.gz"
+        sha256 "f10a1256437ed973955dba691283b96d73ec77d217dbd2aa3727922f45397ff0"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.0/lorawan-stack-cli_3.5.0_linux_armv6.tar.gz"
-        sha256 "8acbc05fb8e77c82147d5cd13b48f7d655ac009900aee57605b71001bd0860b8"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.1/lorawan-stack-cli_3.5.1_linux_armv6.tar.gz"
+        sha256 "85616d221a8a90cc0b49fb3ec408e0d905b0d30c8c29f9d06f38b69bf65b0b26"
       end
     end
   end
