@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.5.3"
+  version "3.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.3/lorawan-stack_3.5.3_darwin_amd64.tar.gz"
-    sha256 "e6fe39ba036553086fb643122799cebd026b6039313654c186bbbfa98dd5f7e7"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack_3.6.0_darwin_amd64.tar.gz"
+    sha256 "a150ddd45159999a41ddbba69b2fc136d18c974b3e379ee1bfaa27e060af81d5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.3/lorawan-stack_3.5.3_linux_amd64.tar.gz"
-      sha256 "f4b12dbff2ed1f382aef38be4981527c57e0376b6e0d34d24818fd5a68741740"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack_3.6.0_linux_amd64.tar.gz"
+      sha256 "e92420f4caa5952e819fcbf7555adeff86720f8270616c6164c236d9644fe02e"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.3/lorawan-stack_3.5.3_linux_arm64.tar.gz"
-        sha256 "ed17ed01500204de0deb3c701a802e38624b48f2c6cb03d38aadcf734d527b48"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack_3.6.0_linux_arm64.tar.gz"
+        sha256 "a36e41c2d495c68b5c4e81780e7e190f69f62bce634c7dd7dd123a2d08db62f8"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.5.3/lorawan-stack_3.5.3_linux_armv6.tar.gz"
-        sha256 "9ed1a57dc578b850d1da5bd0cde10934487d42259c8e4f5fd408f863fd0b7921"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack_3.6.0_linux_armv6.tar.gz"
+        sha256 "c489866c4c8d09e2b9292e742f57f0c328e2fb9f7fc79a9ef30999343b11c27c"
       end
     end
   end
