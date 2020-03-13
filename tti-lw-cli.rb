@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.6.0"
+  version "3.6.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack-cli_3.6.0_darwin_amd64.tar.gz"
-    sha256 "37b867a64a18799ce24231205d5335b99594fe0d9949479b0c927702f8f92a46"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.1/lorawan-stack-cli_3.6.1_darwin_amd64.tar.gz"
+    sha256 "2117a50e804a99b3711ed92f9d24054669489858e23d811ab5c6bbb3e15f115f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack-cli_3.6.0_linux_amd64.tar.gz"
-      sha256 "fea5a8e76b990a22a29aef01620eba48864e6f8d80fa79765cb4ad56857a6273"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.1/lorawan-stack-cli_3.6.1_linux_amd64.tar.gz"
+      sha256 "125d119c9e1feb1df3c79f034ce6dcdf2567bbef0fac14339d9d54c3a87a8fb3"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack-cli_3.6.0_linux_arm64.tar.gz"
-        sha256 "3b3699667f37bfe7b6ec5185226c076f6f5b21cbb5d2970cdaa5534f22eac88e"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.1/lorawan-stack-cli_3.6.1_linux_arm64.tar.gz"
+        sha256 "059d61c95451747ed45bdb1b5339f0e9e6ed3bf8be3ce16481837c1dfca5daa0"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.0/lorawan-stack-cli_3.6.0_linux_armv6.tar.gz"
-        sha256 "3c2e8ce87daac8557e7577e4ea561a96a31e2609efc629b800a95d2088c7b740"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.6.1/lorawan-stack-cli_3.6.1_linux_armv6.tar.gz"
+        sha256 "53ceb8d6986e6a93a24adb400f467b1507c9bb14f937647fc43f0b522d08c133"
       end
     end
   end
@@ -28,6 +28,5 @@ class TtiLwCli < Formula
 
   def install
     bin.install "tti-lw-cli"
-    libexec.install doc
   end
 end
