@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.8.5"
+  version "3.8.6"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.5/lorawan-stack-cli_3.8.5_darwin_amd64.tar.gz"
-    sha256 "fe4de53053828ceefbe889815aa8085d63222391f1c4d30f388c2f5085bade18"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.6/lorawan-stack-cli_3.8.6_darwin_amd64.tar.gz"
+    sha256 "a9b858ae0bf0aa9cbe828737a237151ce53464fb17ea0e78a9df475d2ee9037e"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.5/lorawan-stack-cli_3.8.5_linux_amd64.tar.gz"
-      sha256 "ab85a16d563bab4aa4e57f3c74d08c192ed4adf66abd33abdfa9e7879c0ae034"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.6/lorawan-stack-cli_3.8.6_linux_amd64.tar.gz"
+      sha256 "8a287d8f2ae3303253927bd063205f7a330af35d49774e2f7de6dfcb8186900c"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.5/lorawan-stack-cli_3.8.5_linux_arm64.tar.gz"
-        sha256 "fcd2d693bee3d9340cbfff32630b963998ffa2c4369bfa103805c8cf9f732620"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.6/lorawan-stack-cli_3.8.6_linux_arm64.tar.gz"
+        sha256 "7918bf3242b333dd8841099706ed0e46846714e9ada5c26fbfada1cdff8fd8a6"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.5/lorawan-stack-cli_3.8.5_linux_armv6.tar.gz"
-        sha256 "b261a07229a3bc717bd1f0a0b46384202061cefe4bd28adf00c85bdc2117441a"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.6/lorawan-stack-cli_3.8.6_linux_armv6.tar.gz"
+        sha256 "55104e07544141ceb66e347f1f7ce99c6f23015419ccaa8a972789c17d4f1583"
       end
     end
   end
