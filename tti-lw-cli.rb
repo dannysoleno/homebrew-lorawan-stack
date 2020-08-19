@@ -2,24 +2,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.8.7"
+  version "3.9.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.7/lorawan-stack-cli_3.8.7_darwin_amd64.tar.gz"
-    sha256 "c900df77bffd8269ff8cfa930f5aea2b443a1b2820f52611f5adc07a1bb42580"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.9.1/lorawan-stack-cli_3.9.1_darwin_amd64.tar.gz"
+    sha256 "a9d0ddd05f1222337915505023346c4f2ebde5ca67cec77d959cf22956640e48"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.7/lorawan-stack-cli_3.8.7_linux_amd64.tar.gz"
-      sha256 "0883b2be04260ab79b9e5292cc00e3da074f3f4a93a5fca03aded9c6cf3e9b71"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.9.1/lorawan-stack-cli_3.9.1_linux_amd64.tar.gz"
+      sha256 "6463b38486123826b1135d0e8f97670e6919378cc7eb4f5fce0f9ead3fe9df71"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.7/lorawan-stack-cli_3.8.7_linux_arm64.tar.gz"
-        sha256 "fb62d910e368e17b13a29e958d8a410a3922ddf25763945631185324b38f0cb4"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.9.1/lorawan-stack-cli_3.9.1_linux_arm64.tar.gz"
+        sha256 "92b72abeac3cb620214cdeb391b53d15bdbf4d30bef941621aba71c23284eada"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.8.7/lorawan-stack-cli_3.8.7_linux_armv6.tar.gz"
-        sha256 "3510bd3329a4d1cde3d5b360ba22e7824e8c1e58fc9f5c61b7ada8a739611a0e"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.9.1/lorawan-stack-cli_3.9.1_linux_armv6.tar.gz"
+        sha256 "3a499b4118b42be8234632ca2196f8d72ec706f4d4f0d38c96895fdb18e7876d"
       end
     end
   end
@@ -28,5 +28,8 @@ class TtiLwCli < Formula
 
   def install
     bin.install "tti-lw-cli"
+    bash_completion.install "config/completion/bash/tti-lw-cli"
+    zsh_completion.install "config/completion/zsh/_tti-lw-cli"
+    fish_completion.install "config/completion/fish/tti-lw-cli.fish"
   end
 end
