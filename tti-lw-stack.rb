@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.10.1"
+  version "3.10.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.1/lorawan-stack_3.10.1_darwin_amd64.tar.gz"
-    sha256 "3ee208ec72ad5d582cd38319ff8526adb456d589146ba12f4e1d5898877aff81"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.2/lorawan-stack_3.10.2_darwin_amd64.tar.gz"
+    sha256 "6071814bd109e2de5d5769ecd4439b904078eba02457505afa148e31bded4f4d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.1/lorawan-stack_3.10.1_linux_amd64.tar.gz"
-      sha256 "c5025ae69a22c0c489c254bdc2eb668d5d3f89f1e37a55bedb72d4013666623b"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.2/lorawan-stack_3.10.2_linux_amd64.tar.gz"
+      sha256 "400e5b35100c2c9a594e94bb1cf7944c81956f7b4f3967e0346fdb92a97003d9"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.1/lorawan-stack_3.10.1_linux_arm64.tar.gz"
-        sha256 "33951106e9dd415a112cbfb5a8b654b2a3b977926e7b9599e96b94bf57ad3d96"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.2/lorawan-stack_3.10.2_linux_arm64.tar.gz"
+        sha256 "72e18be3a1af1fd45f16fc58d2a60907c71103d8231c54423df02c890269b5b7"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.1/lorawan-stack_3.10.1_linux_armv6.tar.gz"
-        sha256 "250c239f538e2dd50554472c77c68ffd883743c6a007f1e8c8a993f439f90768"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.2/lorawan-stack_3.10.2_linux_armv6.tar.gz"
+        sha256 "c5f9a120b43eea741e5f08e882b07ae623f3a38c3e727d60c473aecbf84b5906"
       end
     end
   end
