@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.10.4"
+  version "3.10.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.4/lorawan-stack_3.10.4_darwin_amd64.tar.gz"
-    sha256 "c6c5e0c6a281c6b81d2a384ff8601f033753e2026937c3631215d99032b0fc5d"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_darwin_amd64.tar.gz"
+    sha256 "dd817eb3303d4f72e50077d511eaf93d904e7e2adacd3cbf58bda9db5e6bf772"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.4/lorawan-stack_3.10.4_linux_amd64.tar.gz"
-      sha256 "5b7d7c1dceaafdcb8c61c17065b36379b8be879bda6912ed22eea1ca1249e075"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_linux_amd64.tar.gz"
+      sha256 "faf1fa26044e92a4882def3bd9f11ca032e92c23e11df4f3295fe9511b9cd4d7"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.4/lorawan-stack_3.10.4_linux_arm64.tar.gz"
-        sha256 "6e98630b233f0436dfa6f5b616fe2efee80c32d687a3fa400e6978f8a8c59612"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_linux_arm64.tar.gz"
+        sha256 "794911fa682594b3bcf4fbf296b0f4dcab781b112749784b02645861d9e35e01"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.4/lorawan-stack_3.10.4_linux_armv6.tar.gz"
-        sha256 "2a0605529fb2ab67559ff179facfc1fb901098de193d9e572874363a099f2b2e"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_linux_armv6.tar.gz"
+        sha256 "48b35e391ab83d3e8d0746eae2f7d1775d25c38c87b555ef4a9441ca1754911a"
       end
     end
   end
