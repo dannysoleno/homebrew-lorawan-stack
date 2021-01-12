@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.10.5"
+  version "3.10.6"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_darwin_amd64.tar.gz"
-    sha256 "dd817eb3303d4f72e50077d511eaf93d904e7e2adacd3cbf58bda9db5e6bf772"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_darwin_amd64.tar.gz"
+    sha256 "b30d01e5ccf8233ab8dae216349be4a463cb74f97674c9714813f1e5218ad1f5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_linux_amd64.tar.gz"
-      sha256 "faf1fa26044e92a4882def3bd9f11ca032e92c23e11df4f3295fe9511b9cd4d7"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_linux_amd64.tar.gz"
+      sha256 "28ccb1db5bcdffdf318c8676d55672f60d2257d55f17f7ae9b3e2c52f727b4b7"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_linux_arm64.tar.gz"
-        sha256 "794911fa682594b3bcf4fbf296b0f4dcab781b112749784b02645861d9e35e01"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_linux_arm64.tar.gz"
+        sha256 "b452ce6698efe84a0cd40c01b2736563b7108d1047e4acc6cea42e1c29c400a0"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.5/lorawan-stack_3.10.5_linux_armv6.tar.gz"
-        sha256 "48b35e391ab83d3e8d0746eae2f7d1775d25c38c87b555ef4a9441ca1754911a"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_linux_armv6.tar.gz"
+        sha256 "8962b8abc0f44810418c41aa53014ef753f943696ca2ea7353ec3261a4a2cdac"
       end
     end
   end
