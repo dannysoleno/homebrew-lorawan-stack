@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.10.6"
+  version "3.10.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_darwin_amd64.tar.gz"
-    sha256 "b30d01e5ccf8233ab8dae216349be4a463cb74f97674c9714813f1e5218ad1f5"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_darwin_amd64.tar.gz"
+    sha256 "d0d9188d34ca2b9321d419c4d64b6207d9e20a3cae740b43a731dca248f8bbf5"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_linux_amd64.tar.gz"
-      sha256 "28ccb1db5bcdffdf318c8676d55672f60d2257d55f17f7ae9b3e2c52f727b4b7"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_linux_amd64.tar.gz"
+      sha256 "f28b09b7ad308ed770b61e0b5fdb5938fc30363f4df3ac5d265d7227b1ae4d43"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_linux_arm64.tar.gz"
-        sha256 "b452ce6698efe84a0cd40c01b2736563b7108d1047e4acc6cea42e1c29c400a0"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_linux_arm64.tar.gz"
+        sha256 "c8b9d8d2e42ab6e7c7cc1110c2d95c9f8b075bb7531e2ec96dc84dfa15c692dc"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.6/lorawan-stack_3.10.6_linux_armv6.tar.gz"
-        sha256 "8962b8abc0f44810418c41aa53014ef753f943696ca2ea7353ec3261a4a2cdac"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_linux_armv6.tar.gz"
+        sha256 "588532967ca3a8487f6cd4c599b1092955c8ad7e2eb991b39cd07e9b7c1ae9d0"
       end
     end
   end
