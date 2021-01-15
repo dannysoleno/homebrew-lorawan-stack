@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.10.7"
+  version "3.10.8"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_darwin_amd64.tar.gz"
-    sha256 "75f6dad27625d19fd26f9f78fe743380f92ab5178570a40dc85009858871d840"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_darwin_amd64.tar.gz"
+    sha256 "fa22131b67591762a25c8b49f2228f0c0cdd774cc2fc4c367207cdd0e55c428d"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_linux_amd64.tar.gz"
-      sha256 "cb1d4f049ff71f22be86e3617ad725c81b3e894877f5400f6d001921247c364d"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_linux_amd64.tar.gz"
+      sha256 "82d7d48ad7afbb6bb482696b983a78d156e9095767cb8e895c54cce9ba73fabc"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_linux_arm64.tar.gz"
-        sha256 "539e0e16b851303509e54ef9e0ae361aa8014b3ea906913c380ee68dededd0c1"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_linux_arm64.tar.gz"
+        sha256 "fdb82444f7c030bd77eb65256ac6b7a5d94e00c4a7247674be63fbae0b7fdb7b"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.7/lorawan-stack_3.10.7_linux_armv6.tar.gz"
-        sha256 "bcb4bf5a5d2781f32dad54370cd027d4e759f9b2a3d6d0fd1f7b2c97919734f4"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_linux_armv6.tar.gz"
+        sha256 "410d6eaafb9b5a142120c1ffbe68ddf1b879183189c4d20770a8f97bacff31b9"
       end
     end
   end
