@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.10.8"
+  version "3.10.9"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_darwin_amd64.tar.gz"
-    sha256 "fa22131b67591762a25c8b49f2228f0c0cdd774cc2fc4c367207cdd0e55c428d"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_darwin_amd64.tar.gz"
+    sha256 "e529ba7d3bf2697f849dcf9acc642247f580c83fa980f2a5dffc8d6367c032f2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_linux_amd64.tar.gz"
-      sha256 "82d7d48ad7afbb6bb482696b983a78d156e9095767cb8e895c54cce9ba73fabc"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_linux_amd64.tar.gz"
+      sha256 "3f1afc472ba0e1bf81385400d3a80c9c408cc72d05e88a70396311bdcf5fe6ec"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_linux_arm64.tar.gz"
-        sha256 "fdb82444f7c030bd77eb65256ac6b7a5d94e00c4a7247674be63fbae0b7fdb7b"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_linux_arm64.tar.gz"
+        sha256 "bf10f8c6039acc8b7195475b85f788413497c811ea3af81d92eb6cdf252eb541"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.8/lorawan-stack_3.10.8_linux_armv6.tar.gz"
-        sha256 "410d6eaafb9b5a142120c1ffbe68ddf1b879183189c4d20770a8f97bacff31b9"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_linux_armv6.tar.gz"
+        sha256 "e87b1925ea2b863843a41c46ed42734777389419d58112e2e50ebd1904c31a86"
       end
     end
   end
