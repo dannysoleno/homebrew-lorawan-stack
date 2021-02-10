@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.10.9"
+  version "3.11.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_darwin_amd64.tar.gz"
-    sha256 "e529ba7d3bf2697f849dcf9acc642247f580c83fa980f2a5dffc8d6367c032f2"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_darwin_amd64.tar.gz"
+    sha256 "a3efee7832c04a80730ac4fadfa6174058ac16e8009ce7622ca192a043c9baa9"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_linux_amd64.tar.gz"
-      sha256 "3f1afc472ba0e1bf81385400d3a80c9c408cc72d05e88a70396311bdcf5fe6ec"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_linux_amd64.tar.gz"
+      sha256 "bf5b3617f1131916cf96c8a98bf4b7e4d2e0877647becd7818e6b59c4fcb89ba"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_linux_arm64.tar.gz"
-        sha256 "bf10f8c6039acc8b7195475b85f788413497c811ea3af81d92eb6cdf252eb541"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_linux_arm64.tar.gz"
+        sha256 "e33837e1cbfea90ad6eb89b67a072dec3a8e25a72148feb0d68a64bc89017ac7"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.9/lorawan-stack_3.10.9_linux_armv6.tar.gz"
-        sha256 "e87b1925ea2b863843a41c46ed42734777389419d58112e2e50ebd1904c31a86"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_linux_armv6.tar.gz"
+        sha256 "5d13e8484033aa32e8270a3fd0dcbe185b84c47783dfeda2c28246be0e939264"
       end
     end
   end
