@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.11.0"
+  version "3.10.10"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_darwin_amd64.tar.gz"
-    sha256 "a3efee7832c04a80730ac4fadfa6174058ac16e8009ce7622ca192a043c9baa9"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.10/lorawan-stack_3.10.10_darwin_amd64.tar.gz"
+    sha256 "0aaadaa96c78b67471bb1276372b4b0f3591f7542d04132ee86b563f9d492db3"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_linux_amd64.tar.gz"
-      sha256 "bf5b3617f1131916cf96c8a98bf4b7e4d2e0877647becd7818e6b59c4fcb89ba"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.10/lorawan-stack_3.10.10_linux_amd64.tar.gz"
+      sha256 "ffeb5996a884ccefaae1c804647be8e62d2b9834eb433dd7d51e3f3c6d24601d"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_linux_arm64.tar.gz"
-        sha256 "e33837e1cbfea90ad6eb89b67a072dec3a8e25a72148feb0d68a64bc89017ac7"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.10/lorawan-stack_3.10.10_linux_arm64.tar.gz"
+        sha256 "9ee387dd8cf925af0fa2a074e6bcf9e15967bb95e2c7b61609de09ee9abb917b"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.0/lorawan-stack_3.11.0_linux_armv6.tar.gz"
-        sha256 "5d13e8484033aa32e8270a3fd0dcbe185b84c47783dfeda2c28246be0e939264"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.10.10/lorawan-stack_3.10.10_linux_armv6.tar.gz"
+        sha256 "30b59fe0e7789cd6072fa0cbd8e547174f39b38fcbe622a4b841b1e7eb280119"
       end
     end
   end
