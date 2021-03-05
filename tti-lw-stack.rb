@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.11.1"
+  version "3.11.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.1/lorawan-stack_3.11.1_darwin_amd64.tar.gz"
-    sha256 "a2c7087c5569aadde1072e1d5f27e88591f0a2ecb37c086825757e9bd0b1ca52"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_darwin_amd64.tar.gz"
+    sha256 "84f13754e51a5b5b3552a73a373acb31b6c6b8d7a027e8c667d7e23fd60821f9"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.1/lorawan-stack_3.11.1_linux_amd64.tar.gz"
-      sha256 "ca8c059d10c93cc2b67da9e248b8686b3433c6ddc81bd222d737ef0ee73ff4e2"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_linux_amd64.tar.gz"
+      sha256 "84cffd5ad22708f438c0b98374e49bb20226c85e1a36491dac2e8eb6af66732a"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.1/lorawan-stack_3.11.1_linux_arm64.tar.gz"
-        sha256 "bdbd596e8f6c0a0b3fa87464ae118a524b2d63964f8536370c4e514e9dbf781d"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_linux_arm64.tar.gz"
+        sha256 "4e6fe67c7e5bc6db4ad89a4f1d5ec64b60fd8f9032bb3cfc2a7f789ad3087698"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.1/lorawan-stack_3.11.1_linux_armv6.tar.gz"
-        sha256 "0b9827b114443cf3509262db68c83bff1019e2701a0aece842cf3dba2ada5ed7"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_linux_armv6.tar.gz"
+        sha256 "225cb9a36e607467ad1eb9059d44655707832e1f3e777169ccbe595c6ce3fb24"
       end
     end
   end
