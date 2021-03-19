@@ -2,24 +2,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.11.2"
+  version "3.11.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_darwin_amd64.tar.gz"
-    sha256 "84f13754e51a5b5b3552a73a373acb31b6c6b8d7a027e8c667d7e23fd60821f9"
+    url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.3/lorawan-stack_3.11.3_darwin_amd64.tar.gz"
+    sha256 "1b8f535b9638db9dbbadce49e5ebc77b4243d80e8defa8c4873e33d4dc8fc3d9"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_linux_amd64.tar.gz"
-      sha256 "84cffd5ad22708f438c0b98374e49bb20226c85e1a36491dac2e8eb6af66732a"
+      url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.3/lorawan-stack_3.11.3_linux_amd64.tar.gz"
+      sha256 "770383ef98bb90f7be454f169abf80e5ae822eff0488f3a331772dd34795193c"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_linux_arm64.tar.gz"
-        sha256 "4e6fe67c7e5bc6db4ad89a4f1d5ec64b60fd8f9032bb3cfc2a7f789ad3087698"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.3/lorawan-stack_3.11.3_linux_arm64.tar.gz"
+        sha256 "2a91c13a146f71ffd4c850968604d66eac4af7933196b9f4686bd09aec0dbf79"
       else
-        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.2/lorawan-stack_3.11.2_linux_armv6.tar.gz"
-        sha256 "225cb9a36e607467ad1eb9059d44655707832e1f3e777169ccbe595c6ce3fb24"
+        url "https://github.com/TheThingsIndustries/lorawan-stack/releases/download/v3.11.3/lorawan-stack_3.11.3_linux_armv6.tar.gz"
+        sha256 "901b2ab850d7c2068dc08d33cbcea8ea8d7622b275f38d42fb79b6ebf3e40777"
       end
     end
   end
