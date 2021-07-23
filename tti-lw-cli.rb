@@ -5,28 +5,28 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack Enterprise for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.13.3"
+  version "3.14.0"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.13.3/lorawan-stack-cli_3.13.3_darwin_amd64.tar.gz"
-    sha256 "2974c3f354442ae8fccb2e531b364856b99fa9727c31e3fca104bd66b3aad77c"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.14.0/lorawan-stack-cli_3.14.0_darwin_amd64.tar.gz"
+    sha256 "cba08e280d141dcab672c932c6a43568d8a4ea5c30e2fe75b3e5ac7ffc169427"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.13.3/lorawan-stack-cli_3.13.3_darwin_arm64.tar.gz"
-    sha256 "732d337d8fbed03ca6993be123d73b8298232b91b5ccf7d144d1c95fecff243e"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.14.0/lorawan-stack-cli_3.14.0_darwin_arm64.tar.gz"
+    sha256 "a2b8242a6ed37d56dc2b445eca7b928adb2b258dcc932409cbae530da2b60e1f"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.13.3/lorawan-stack-cli_3.13.3_linux_amd64.tar.gz"
-    sha256 "3c8300c4fddecfaac1eae34a1ab4a182840263a31f74d2a111ba0aa61f56d5f0"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.14.0/lorawan-stack-cli_3.14.0_linux_amd64.tar.gz"
+    sha256 "d6cce74ee93e1fe7b41c945e10054d090659a6bdfeb929a9a3940301581ec274"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.13.3/lorawan-stack-cli_3.13.3_linux_armv6.tar.gz"
-    sha256 "df2abfbab1e83c6fe79670293d82fe4b469afe6a395c43a83511950edabfe7e7"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.14.0/lorawan-stack-cli_3.14.0_linux_armv6.tar.gz"
+    sha256 "25f33002ebb05492eff9764345829758b96aeaff30c5d9fdebac067edd17113a"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.13.3/lorawan-stack-cli_3.13.3_linux_arm64.tar.gz"
-    sha256 "0b28d57c221863367cba1cb53e6f4fb4be6c831984d5fee4e6314dcc1b9b840c"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.14.0/lorawan-stack-cli_3.14.0_linux_arm64.tar.gz"
+    sha256 "66270c059178a223f4474e29525365e85aad7130cf17075ac1650b3b861aa3ab"
   end
 
   conflicts_with "tti-lw-stack"
