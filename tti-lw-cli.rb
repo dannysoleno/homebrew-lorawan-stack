@@ -5,24 +5,24 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack Enterprise for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.15.0"
+  version "3.15.1"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.0/lorawan-stack-cli_3.15.0_darwin_amd64.tar.gz"
-    sha256 "4262817977aabb9ea482bef4609376bfeb6c1fcfab19a99a423c9b529c09bef8"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack-cli_3.15.1_darwin_amd64.tar.gz"
+    sha256 "2f533d92fd6fb9231c4d459f1d60d9edec9310925ae7b4e3d89ee6a02077a4d7"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.0/lorawan-stack-cli_3.15.0_linux_amd64.tar.gz"
-    sha256 "a3c75742bf9761abf77476ae718aed0cf7cfe260d50c956df4810391cbf04b9e"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack-cli_3.15.1_linux_amd64.tar.gz"
+    sha256 "b49d233e6bd2277343510582d38da8034c64de769c4d08ef33148298a4da9673"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.0/lorawan-stack-cli_3.15.0_linux_armv6.tar.gz"
-    sha256 "92ef0ae57cb432423acc04b0b3073765c69b8dcf878c9599f4e79ce4a9fa7d44"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack-cli_3.15.1_linux_armv6.tar.gz"
+    sha256 "9e9c00b40bf8094565be7a026838a309fc3f572e07d9eee8d72622d9a58a6df1"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.0/lorawan-stack-cli_3.15.0_linux_arm64.tar.gz"
-    sha256 "eee49e2b070341d4832d01fb00417cef306b224dbef9437e1e2762a7366b9b1e"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack-cli_3.15.1_linux_arm64.tar.gz"
+    sha256 "7d76ac534f547d568428b0bff8f658f1d93efc5f68dfb085bf393792ecf3ffdb"
   end
 
   conflicts_with "tti-lw-stack"
