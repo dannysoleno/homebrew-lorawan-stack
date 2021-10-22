@@ -5,24 +5,24 @@
 class TtiLwStack < Formula
   desc "The Things Stack Enterprise for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.15.1"
+  version "3.15.2"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack_3.15.1_darwin_amd64.tar.gz"
-    sha256 "9adaacd03b9d5be9e634654bb254f59197bebb9853edc98426337c6182271283"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.2/lorawan-stack_3.15.2_darwin_amd64.tar.gz"
+    sha256 "999f336c0adb09aea1a09eaed3d85200e9dacbe14b2a4ed8a69d68c5388364aa"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack_3.15.1_linux_amd64.tar.gz"
-    sha256 "58d9b2577fdb19f48a48dd62b9dbf7658e2fd60efdf0e1ff7e4f259eb5fc1161"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.2/lorawan-stack_3.15.2_linux_amd64.tar.gz"
+    sha256 "035959599dd1186402d6fa5f2060b461dfd6e0e84eaa0825c8dba16f2c396b02"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack_3.15.1_linux_armv6.tar.gz"
-    sha256 "8d9c40dbac31b08bd44c7014ae7335322d5087b7d648b0bfa355cd8fbe794dbb"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.2/lorawan-stack_3.15.2_linux_armv6.tar.gz"
+    sha256 "ec1dd322b716d60ce51d0492d837406caaeff365962ab4f15be868106f255f93"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.1/lorawan-stack_3.15.1_linux_arm64.tar.gz"
-    sha256 "01a16ff75dd723a58f97c31f53fd607ffb45a909be68826a64fbc52c92b2f157"
+    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.2/lorawan-stack_3.15.2_linux_arm64.tar.gz"
+    sha256 "537ad0d39b3eb46650b145fc45495f1c905b52e76a1894791b46551a600bae5e"
   end
 
   conflicts_with "tti-lw-cli"
