@@ -5,32 +5,68 @@
 class TtiLwCli < Formula
   desc "CLI of The Things Stack Enterprise for LoRaWAN"
   homepage "https://www.thethingsindustries.com"
-  version "3.15.3"
-  bottle :unneeded
+  version "3.16.0"
 
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.3/lorawan-stack-cli_3.15.3_darwin_amd64.tar.gz"
-    sha256 "47bf2b22a3ea16ccdddfb856ded861d2a26db8b53dee922b947f58fc366e496d"
+  on_macos do
+    if Hardware::CPU.intel?
+      url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.16.0/lorawan-stack-cli_3.16.0_darwin_amd64.tar.gz"
+      sha256 "cf08667e9a8088b36f19d69d737ac07cb77ac113edd5593735610566ec3221d0"
+
+      def install
+        bin.install "tti-lw-cli"
+        bash_completion.install "config/completion/bash/tti-lw-cli"
+        zsh_completion.install "config/completion/zsh/_tti-lw-cli"
+        fish_completion.install "config/completion/fish/tti-lw-cli.fish"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.16.0/lorawan-stack-cli_3.16.0_darwin_arm64.tar.gz"
+      sha256 "d278125f50af1ab528005bfa62a62c389dccf3d8344fecf7c59319bddaed67e2"
+
+      def install
+        bin.install "tti-lw-cli"
+        bash_completion.install "config/completion/bash/tti-lw-cli"
+        zsh_completion.install "config/completion/zsh/_tti-lw-cli"
+        fish_completion.install "config/completion/fish/tti-lw-cli.fish"
+      end
+    end
   end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.3/lorawan-stack-cli_3.15.3_linux_amd64.tar.gz"
-    sha256 "4844421dbafee910de2e19ea5496915e3b58b82e0f4ced6e485fe6bb5641dbe7"
-  end
-  if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.3/lorawan-stack-cli_3.15.3_linux_armv6.tar.gz"
-    sha256 "d83457421b6eed5a8429c43753bdb7df8f3c12b5646c75e9e23e116ed689a804"
-  end
-  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.15.3/lorawan-stack-cli_3.15.3_linux_arm64.tar.gz"
-    sha256 "c6fd82c83470539e02197036be0a1af62e9c3e5cf1b493cdee06d0c3e6426417"
+
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.16.0/lorawan-stack-cli_3.16.0_linux_amd64.tar.gz"
+      sha256 "a9c19d3424c3aa0e1077221ab6c15074cfa27af49fd8d72c20d6406e3f3b17c3"
+
+      def install
+        bin.install "tti-lw-cli"
+        bash_completion.install "config/completion/bash/tti-lw-cli"
+        zsh_completion.install "config/completion/zsh/_tti-lw-cli"
+        fish_completion.install "config/completion/fish/tti-lw-cli.fish"
+      end
+    end
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.16.0/lorawan-stack-cli_3.16.0_linux_armv6.tar.gz"
+      sha256 "108fa8be169d5b42865626817a166be765c6aa659423d473b33fbad118c358ff"
+
+      def install
+        bin.install "tti-lw-cli"
+        bash_completion.install "config/completion/bash/tti-lw-cli"
+        zsh_completion.install "config/completion/zsh/_tti-lw-cli"
+        fish_completion.install "config/completion/fish/tti-lw-cli.fish"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://the-things-enterprise-stack-releases.s3-eu-west-1.amazonaws.com/3.16.0/lorawan-stack-cli_3.16.0_linux_arm64.tar.gz"
+      sha256 "ad9d2e8a7c4d71d1bb02c8fa40de28e2507db11676df40d6428ed61d3b69502a"
+
+      def install
+        bin.install "tti-lw-cli"
+        bash_completion.install "config/completion/bash/tti-lw-cli"
+        zsh_completion.install "config/completion/zsh/_tti-lw-cli"
+        fish_completion.install "config/completion/fish/tti-lw-cli.fish"
+      end
+    end
   end
 
   conflicts_with "tti-lw-stack"
-
-  def install
-    bin.install "tti-lw-cli"
-    bash_completion.install "config/completion/bash/tti-lw-cli"
-    zsh_completion.install "config/completion/zsh/_tti-lw-cli"
-    fish_completion.install "config/completion/fish/tti-lw-cli.fish"
-  end
 end
